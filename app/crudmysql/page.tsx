@@ -9,15 +9,15 @@ console.log("Rezultatul este:", result)
     
     <div>
     {JSON.stringify(result)}
-    <table>
+    <table className="table-auto border-spacing-2 border border-collapse  border-cyan-50 border-separate">
        <tbody>
         <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Location</th>
-            <th>Id</th>
+            <th  className="border border-slate-700">Name</th>
+            <th  className="border border-slate-700">Age</th>
+            <th  className="border border-slate-700">Location</th>
+            <th  className="border border-slate-700">Id</th>
         </tr>
-        {result.map(h => (<tr key={h.id}><td>{h.name}</td><td>{h.age}</td><td>{h.location}</td><td>{h.id}</td></tr>))}
+       {result.map(h => (<tr key={h.id}><td className="border border-slate-700">{h.name}</td><td className="border border-slate-700">{h.age}</td><td className="border border-slate-700">{h.location}</td><td className="border border-slate-700">{h.id}</td></tr>))}
 
 
         </tbody>
